@@ -11,6 +11,17 @@ Before analysis, the dataset was cleaned and standardized using SQL-based data c
 This project simulates a real-world analyst workflow:
 
 * Raw Data → Data Cleaning → Exploratory Data Analysis → Business Insights
+* ## Project Workflow
+
+Raw CSV Dataset
+        ↓
+Data Cleaning & Standardization
+        ↓
+Exploratory Data Analysis (EDA)
+        ↓
+Business Insights & Trend Discovery
+        ↓
+SQL Portfolio Project Deployment on GitHub
 
 ---
 
