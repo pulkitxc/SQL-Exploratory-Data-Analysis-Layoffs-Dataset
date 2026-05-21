@@ -224,6 +224,16 @@ Through this project, I strengthened my understanding of:
 * Structuring portfolio-ready analytics projects
 
 ---
+## Query Output Snapshots
+
+### Rolling Cumulative Layoffs Analysis
+![Rolling Total Layoffs](rolling_total_layoffs.png.png)
+
+### Dense Rank Company Analysis
+![Dense Rank Analysis](dense_rank_analysis.png.png)
+
+### Top Companies by Total Layoffs
+![Top Layoff Companies](top_layoff_companies.png.png)
 
 # Author
 
