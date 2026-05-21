@@ -55,6 +55,16 @@ The main goals of this project were to:
 * Date Functions
 * Git & GitHub
 
+## SQL Techniques Demonstrated
+
+- Data Cleaning
+- Aggregation & Grouping
+- Time Series Analysis
+- Window Functions
+- Ranking Functions
+- Common Table Expressions (CTEs)
+- Rolling Calculations
+- Business Trend Analysis
 ---
 
 # Data Cleaning Process
@@ -70,25 +80,6 @@ Cleaning tasks included:
 * Formatting date columns
 * Removing unnecessary rows and columns
 
-Data cleaning queries are included in:
-
-```sql
-layoffs_data_cleaning.sql
-```
-
----
-
-# Exploratory Data Analysis (EDA)
-
-EDA queries are included in:
-
-```sql
-layoffs_eda.sql
-```
-
-The analysis focused on identifying trends, patterns, outliers, and business insights from the layoffs dataset.
-
----
 
 # Key SQL Concepts Used
 
@@ -174,7 +165,28 @@ SELECT
     OVER(ORDER BY month ASC) AS cumulative_layoffs
 FROM DATE_CTE;
 ```
+## Business Questions Solved
 
+### 1. Which companies experienced the highest layoffs?
+Large technology companies recorded some of the highest total layoffs across the dataset, showing the significant impact of economic uncertainty and cost-cutting measures in the tech sector.
+
+### 2. Which industries were most affected globally?
+The technology industry experienced the highest number of layoffs overall, followed by industries heavily dependent on rapid growth and external funding.
+
+### 3. How did layoffs change over time?
+Layoffs increased sharply during periods of economic slowdown and uncertainty, with noticeable spikes during specific months and years shown through rolling cumulative analysis.
+
+### 4. Which countries had the largest workforce reductions?
+The United States recorded the highest total layoffs in the dataset, reflecting the large concentration of global technology and startup companies.
+
+### 5. Which companies had complete shutdowns (100% layoffs)?
+Several startups and smaller companies experienced complete workforce reductions, indicating shutdowns, bankruptcies, or failed business operations.
+
+### 6. How do rolling layoffs trends reflect economic slowdowns?
+Rolling cumulative analysis revealed that layoffs accelerated rapidly during downturn periods, demonstrating how macroeconomic conditions directly affected workforce stability.
+
+### 7. Which companies consistently ranked among the top layoffs each year?
+Using `DENSE_RANK()` and yearly ranking analysis, several major companies repeatedly appeared among the highest yearly layoffs, indicating recurring restructuring efforts over multiple years.
 ---
 
 # Key Insights Discovered
