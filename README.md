@@ -240,3 +240,5 @@ Through this project, I strengthened my understanding of:
 Pulkit
 
 This project was built as part of my journey in Data Analytics and SQL portfolio development.
+------
+➔ Prerequisite: Read about how I engineered the staging tables and scrubbed this dataset in my [Data Cleaning Repository Link Here https://github.com/pulkitxc/sql-layoffs-data-cleaning]
